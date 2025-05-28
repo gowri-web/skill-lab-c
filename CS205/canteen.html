@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canteen</title>
+</head>
+<body>
+    <h1>welcome to canteen</h1>
+    <h2>menu</h2>
+   <label for="">idli(Rs-20)</label>
+   <input type="number" name="" id="idli">
+   <label for="">dosa(Rs-30)</label>
+   <input type="number" name="" id="dosa">
+   <label for="">ricebath(Rs-40)</label>
+   <input type="number" name="" id="ricebath">
+   <button onclick="bill()">SUBMIT</button> 
+   <p id="res">the total bill is</p>
+   <script>
+    function bill(){
+         var idli=document.getElementById("idli").value;
+          var dosa=document.getElementById("dosa").value;
+           var ricebath=document.getElementById("ricebath").value;
+           var total=(idli*20)+(dosa*30)+(ricebath*40);
+           alert(total);
+    }
+   </script>
+</body>
+</html>
